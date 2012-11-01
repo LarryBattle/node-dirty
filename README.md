@@ -6,11 +6,12 @@ The goals of project<br/>
 - Submit pull request.
 
 ##Completed tasks
-Fixed: https://github.com/felixge/node-dirty/issues/30
+1) Fixed: https://github.com/felixge/node-dirty/issues/30
 INFO:
-`.set()` will throw an error if key is undefined.
 
-Fixed: https://github.com/felixge/node-dirty/issues/24
+`.set()` will throw an error if key is undefined.<br/>
+
+2) Fixed: https://github.com/felixge/node-dirty/issues/24
 
 INFO: 
 
@@ -32,7 +33,6 @@ INFO:
 ##TODO list
 
 - factor out `this._readStream` and `this._writeStream` into Classes.
-- https://github.com/felixge/node-dirty/issues/30
 - https://github.com/felixge/node-dirty/issues/28
 - https://github.com/felixge/node-dirty/issues/26
 - https://github.com/felixge/node-dirty/issues/25
