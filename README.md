@@ -65,6 +65,7 @@ Flag `a` [info:](http://nodejs.org/api/fs.html)<br/>
 8) Fixed: https://github.com/felixge/node-dirty/issues/23 <br/>
 - Renamed `this.savewriteBuffer()` to `this.savewriteBuffer()`<br/>
 - Added: `Dirty.prototype.this.getKeyValueObject()`. <br/>
+
 Returns
 
 	Dirty.prototype.getKeyValueObject = function (key) {
