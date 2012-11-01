@@ -56,6 +56,11 @@ INFO<br/>
 - `.set(key, val, cb)`, if val is a function, then tries to saves the source of the function by using `val.toString()`.
 <br/>
 
+7) Fixed: https://github.com/felixge/node-dirty/issues/16
+INFO<br/>
+Calling `this.setupWriteStream()` before `this.setupReadStream()` will create a file if it doesn't exist.<br/>
+Flag `a` [info:](http://nodejs.org/api/fs.html)<br/>
+'a' - Open file for appending. The file is created if it does not exist.<br/>
 
 ##TODO list
 
