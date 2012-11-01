@@ -62,16 +62,37 @@ Calling `this.setupWriteStream()` before `this.setupReadStream()` will create a 
 Flag `a` [info:](http://nodejs.org/api/fs.html)<br/>
 'a' - Open file for appending. The file is created if it does not exist.<br/>
 
+8)Fixed: https://github.com/felixge/node-dirty/issues/23 <br/>
+- Renamed `this.savewriteBuffer()` to `this.savewriteBuffer()`<br/>
+- Added: `Dirty.prototype.this.getKeyValueObject()`. <br/>
+Returns<br/>
+
+	{
+		key : key,
+		val : this._docs[key]
+	};
+
+If the user wants extra values saved to disk, then all they to have to do is add it to the object.<br/>
+This add a timestamp to the entry.<br/>
+
+	Dirty.prototype.getKeyValueObject = function (key) {
+		return {
+			key : key,
+			val : this._docs[key],
+			timeStamp: +(new Date())
+		};
+	};
+
+Note: `Dirty.prototype.convertRowToString` must support other key types than `key` and `val`.
+
 ##TODO list
 
 - factor out `this._readStream` and `this._writeStream` into Classes.
 - https://github.com/felixge/node-dirty/issues/28
 - https://github.com/felixge/node-dirty/issues/25
-- https://github.com/felixge/node-dirty/issues/23
 - https://github.com/felixge/node-dirty/issues/22
 - https://github.com/felixge/node-dirty/issues/18
 - https://github.com/felixge/node-dirty/issues/16
-
 - Pass jslint 100% with default settings
 - Reduce the code complexity with the help of jsmeter.info.
 - Submit as patch
