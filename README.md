@@ -5,7 +5,7 @@ The goals of project<br/>
 - Refactor
 - Submit pull request.
 
-##Completed tasks
+##Completed tasks but need testcases
 1) Fixed: https://github.com/felixge/node-dirty/issues/30
 INFO:
 
@@ -42,6 +42,11 @@ More [information here](http://www.clintharris.net/2011/nodejs-101-use-buffer-to
 <br/>
 Note: A writing event might need to be added.<br/>
 
+4) fixed: https://github.com/felixge/node-dirty/issues/17
+INFO
+Ticket is old and needs to be completed.
+
+
 ##TODO list
 
 - factor out `this._readStream` and `this._writeStream` into Classes.
@@ -50,7 +55,6 @@ Note: A writing event might need to be added.<br/>
 - https://github.com/felixge/node-dirty/issues/23
 - https://github.com/felixge/node-dirty/issues/22
 - https://github.com/felixge/node-dirty/issues/18
-- https://github.com/felixge/node-dirty/issues/17
 - https://github.com/felixge/node-dirty/issues/16
 - https://github.com/felixge/node-dirty/issues/10
 - Pass jslint 100% with default settings
