@@ -100,6 +100,8 @@ Note: `Dirty.prototype.convertRowToString` must support other key types than `ke
 - Reduce the code complexity with the help of jsmeter.info.
 - Submit as patch
 - Add test cases for each issue fixed.
+- Update documentation or add cheatsheet.
+- Update `package.json`
 
 
 ## Backup
