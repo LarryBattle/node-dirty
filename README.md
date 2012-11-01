@@ -1,3 +1,53 @@
+##Project: node-dirty 2
+##Objective: 
+The goals of project<br/>
+- Fix the issues at <https://github.com/felixge/node-dirty/issues>
+- Refactor
+- Submit pull request.
+
+##Completed tasks
+
+Fixed: https://github.com/felixge/node-dirty/issues/24
+
+INFO: 
+
+    /*
+	* @method Dirty.prototype.parseRowString
+	* @param {String} - The row as a string. Result from `.convertRowToString()`
+	* @return {Object} - Object must have with `key` and `val` as properties.
+	*/
+	/*
+	* @method Dirty.prototype.convertRowToString
+	* @param {Object} - ?result from `.parseRowString()`
+	* @return {String}
+	*/
+	/*
+	* @property	Dirty.prototype.rowDelimiter
+	* @type {String} - default is `\n`
+	*/
+
+##TODO list
+
+- factor out `this._readStream` and `this._writeStream` into Classes.
+- https://github.com/felixge/node-dirty/issues/30
+- https://github.com/felixge/node-dirty/issues/28
+- https://github.com/felixge/node-dirty/issues/26
+- https://github.com/felixge/node-dirty/issues/25
+- https://github.com/felixge/node-dirty/issues/23
+- https://github.com/felixge/node-dirty/issues/22
+- https://github.com/felixge/node-dirty/issues/18
+- https://github.com/felixge/node-dirty/issues/17
+- https://github.com/felixge/node-dirty/issues/16
+- https://github.com/felixge/node-dirty/issues/10
+- Pass jslint 100% with default settings
+- Reduce the code complexity with the help of jsmeter.info.
+- Submit as patch
+- Add test cases for each issue fixed.
+
+
+## ----- Backup -----
+
+
 # node-dirty
 
 ## Purpose
