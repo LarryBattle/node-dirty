@@ -42,9 +42,19 @@ More [information here](http://www.clintharris.net/2011/nodejs-101-use-buffer-to
 <br/>
 Note: A writing event might need to be added.<br/>
 
-4) fixed: https://github.com/felixge/node-dirty/issues/17
-INFO
+4) fixed: https://github.com/felixge/node-dirty/issues/17 <br/>
+INFO<br/>
 Ticket is old and needs to be completed.
+
+5) Added `Dirty.VERSION = '0.9.9 BETA'`<br/>
+INFO<br/>
+modules should have a version number.
+
+6) Fixed: https://github.com/felixge/node-dirty/issues/10<br/>
+INFO<br/>
+- `.set()` emits an error if key is undefined.<br/>
+- `.set(key, val, cb)`, if val is a function, then tries to saves the source of the function by using `val.toString()`.
+<br/>
 
 
 ##TODO list
@@ -56,7 +66,7 @@ Ticket is old and needs to be completed.
 - https://github.com/felixge/node-dirty/issues/22
 - https://github.com/felixge/node-dirty/issues/18
 - https://github.com/felixge/node-dirty/issues/16
-- https://github.com/felixge/node-dirty/issues/10
+
 - Pass jslint 100% with default settings
 - Reduce the code complexity with the help of jsmeter.info.
 - Submit as patch
