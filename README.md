@@ -6,6 +6,9 @@ The goals of project<br/>
 - Submit pull request.
 
 ##Completed tasks
+Fixed: https://github.com/felixge/node-dirty/issues/30
+INFO:
+`.set()` will throw an error if key is undefined.
 
 Fixed: https://github.com/felixge/node-dirty/issues/24
 
