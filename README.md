@@ -62,14 +62,16 @@ Calling `this.setupWriteStream()` before `this.setupReadStream()` will create a 
 Flag `a` [info:](http://nodejs.org/api/fs.html)<br/>
 'a' - Open file for appending. The file is created if it does not exist.<br/>
 
-8)Fixed: https://github.com/felixge/node-dirty/issues/23 <br/>
+8) Fixed: https://github.com/felixge/node-dirty/issues/23 <br/>
 - Renamed `this.savewriteBuffer()` to `this.savewriteBuffer()`<br/>
 - Added: `Dirty.prototype.this.getKeyValueObject()`. <br/>
-Returns<br/>
+Returns
 
-	{
-		key : key,
-		val : this._docs[key]
+	Dirty.prototype.getKeyValueObject = function (key) {
+		return {
+			key : key,
+			val : this._docs[key]
+		};
 	};
 
 If the user wants extra values saved to disk, then all they to have to do is add it to the object.<br/>
