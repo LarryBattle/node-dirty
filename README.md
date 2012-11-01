@@ -30,6 +30,16 @@ INFO:
 	* @type {String} - default is `\n`
 	*/
 
+3) Fixed: https://github.com/felixge/node-dirty/issues/26 
+INFO:
+Added `this.writeBuffer` and `this.readBuffer`
+`this.writeBuffer` is the buffer used to write.
+`this.readBuffer` is the buffer used to read.
+However, both buffers are String types and not Buffer objects.
+
+Having an actual Buffer don't matter. Strings are ok.
+Refer to here for more [information](http://www.clintharris.net/2011/nodejs-101-use-buffer-to-append-strings-instead-of-concatenating-them/)
+
 ##TODO list
 
 - factor out `this._readStream` and `this._writeStream` into Classes.
