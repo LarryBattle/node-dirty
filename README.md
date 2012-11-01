@@ -31,20 +31,19 @@ INFO:
 	*/
 
 3) Fixed: https://github.com/felixge/node-dirty/issues/26 
-INFO:
-Added `this.writeBuffer` and `this.readBuffer`
-`this.writeBuffer` is the buffer used to write.
-`this.readBuffer` is the buffer used to read.
-However, both buffers are String types and not Buffer objects.
-
-Having an actual Buffer don't matter. Strings are ok.
+INFO:<br/>
+Added `this.writeBuffer` and `this.readBuffer`<br/>
+`this.writeBuffer` is the buffer used to write.<br/>
+`this.readBuffer` is the buffer used to read.<br/>
+However, both buffers are String types and not Buffer objects.<br/>
+<br/>
+Having an actual Buffer don't matter. Strings are ok.<br/>
 Refer to here for more [information](http://www.clintharris.net/2011/nodejs-101-use-buffer-to-append-strings-instead-of-concatenating-them/)
-
+<br/>
 ##TODO list
 
 - factor out `this._readStream` and `this._writeStream` into Classes.
 - https://github.com/felixge/node-dirty/issues/28
-- https://github.com/felixge/node-dirty/issues/26
 - https://github.com/felixge/node-dirty/issues/25
 - https://github.com/felixge/node-dirty/issues/23
 - https://github.com/felixge/node-dirty/issues/22
@@ -58,7 +57,7 @@ Refer to here for more [information](http://www.clintharris.net/2011/nodejs-101-
 - Add test cases for each issue fixed.
 
 
-## ----- Backup -----
+## Backup
 
 
 # node-dirty
